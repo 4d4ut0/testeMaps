@@ -1,0 +1,58 @@
+
+**** 09/29/17 08:05:01 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Lab4"  [ C:\OrCAD\OrCAD_16.6_Lite\tools\capture\Lab4-PSpiceFiles\SCHEMATIC1\Lab4.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Lab4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/Public/Desktop/OLB_Pspice/ebipolar.lib" 
+* From [PSPICE NETLIST] section of Z:\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.1 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB4
+V_V1         N00091 0  
++SIN 0 15m 10 0 0 0
+C_C1         N00091 N00155  1u  TC=0,0 
+R_R1         0 N00155  1.2k TC=0,0 
+R_R2         N00155 N00273  5.6k TC=0,0 
+R_R3         N00390 N00273  330 TC=0,0 
+V_V2         N00273 0 12Vdc
+C_C2         N00390 N00422  1u  TC=0,0 
+R_R4         0 N00422  220 TC=0,0 
+Q_Q1         N00390 N00155 N00672 BC548B 
+R_R5         0 N00672  100 TC=0,0 
+C_C3         0 N00672  100u  TC=0,0 
+
+**** RESUMING Lab4.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file ebipolar.ind for library file ebipolar.lib.
+
+INFO(ORPSIM-15422): Making new index file ebipolar.ind for library file ebipolar.lib.
+
+ERROR(ORPSIM-15065): Unable to open index file C:\Users\Public\Desktop\OLB_Pspice\ebipolar.ind.
+
+ERROR(ORPSIM-15107): Unable to make index for library file C:\Users\Public\Desktop\OLB_Pspice\ebipolar.lib.
+

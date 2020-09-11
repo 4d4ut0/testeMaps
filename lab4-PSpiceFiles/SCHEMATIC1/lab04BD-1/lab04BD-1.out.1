@@ -1,0 +1,51 @@
+
+**** 10/05/17 21:43:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-lab04BD-1"  [ C:\Users\K4tr1n4\Desktop\aqui\lab4-PSpiceFiles\SCHEMATIC1\lab04BD-1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "lab04BD-1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../ebipolar.lib" 
+* From [PSPICE NETLIST] section of C:\Users\K4tr1n4\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+
+*Analysis directives: 
+.AC DEC 10 10 1M
+--------------$
+ERROR(ORPSIM-16103): Invalid value
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB4
+V_V1         N00091 0  
++SIN 0 50m 1000k 0 0 0
+C_C1         N00091 N00155  1u  TC=0,0 
+R_R1         0 N00155  1.2k TC=0,0 
+R_R2         N00155 N00273  5.6k TC=0,0 
+R_R3         N00390 N00273  330 TC=0,0 
+V_V2         N00273 0 12Vdc
+C_C2         N00390 N00422  1u  TC=0,0 
+R_R4         0 N00422  220 TC=0,0 
+Q_Q1         N00390 N00155 N00672 BC548B 
+R_R5         0 N00672  100 TC=0,0 
+C_C3         0 N00672  100u  TC=0,0 
+
+**** RESUMING lab04BD-1.cir ****
+.END
+

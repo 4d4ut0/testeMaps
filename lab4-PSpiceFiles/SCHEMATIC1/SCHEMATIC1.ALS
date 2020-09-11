@@ -1,0 +1,15 @@
+.ALIASES
+C_C1            C1(1=VIN 2=N00155 ) CN @LAB4.SCHEMATIC1(sch_1):INS136@ANALOG.C.Normal(chips)
+R_R1            R1(1=0 2=N00155 ) CN @LAB4.SCHEMATIC1(sch_1):INS173@ANALOG.R.Normal(chips)
+R_R2            R2(1=N00155 2=N00273 ) CN @LAB4.SCHEMATIC1(sch_1):INS245@ANALOG.R.Normal(chips)
+R_R3            R3(1=N00390 2=N00273 ) CN @LAB4.SCHEMATIC1(sch_1):INS298@ANALOG.R.Normal(chips)
+V_V2            V2(+=N00273 -=0 ) CN @LAB4.SCHEMATIC1(sch_1):INS340@SOURCE.VDC.Normal(chips)
+C_C2            C2(1=N00390 2=N00422 ) CN @LAB4.SCHEMATIC1(sch_1):INS424@ANALOG.C.Normal(chips)
+R_R4            R4(1=0 2=N00422 ) CN @LAB4.SCHEMATIC1(sch_1):INS460@ANALOG.R.Normal(chips)
+Q_Q1            Q1(c=N00390 b=N00155 e=N00672 ) CN @LAB4.SCHEMATIC1(sch_1):INS562@EBIPOLAR.BC548B.Normal(chips)
+R_R5            R5(1=0 2=N00672 ) CN @LAB4.SCHEMATIC1(sch_1):INS606@ANALOG.R.Normal(chips)
+C_C3            C3(1=0 2=N00672 ) CN @LAB4.SCHEMATIC1(sch_1):INS691@ANALOG.C.Normal(chips)
+V_V3            V3(+=VIN -=0 ) CN @LAB4.SCHEMATIC1(sch_1):INS2066@SOURCE.VAC.Normal(chips)
+_    _(Vout=0)
+_    _(Vin=VIN)
+.ENDALIASES

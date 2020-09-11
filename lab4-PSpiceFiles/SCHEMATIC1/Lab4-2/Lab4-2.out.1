@@ -1,0 +1,52 @@
+
+**** 10/05/17 18:19:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-Lab4-2"  [ C:\Users\K4tr1n4\Desktop\aqui\lab4-PSpiceFiles\SCHEMATIC1\Lab4-2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Lab4-2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "Z:/OLB_Pspice/ebipolar.lib" 
+----------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.LIB "../../../ebipolar.lib" 
+* From [PSPICE NETLIST] section of C:\Users\K4tr1n4\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAB4
+V_V1         N00091 0  
++SIN 0 50m 1000k 0 0 0
+C_C1         N00091 N00155  1u  TC=0,0 
+R_R1         0 N00155  1.2k TC=0,0 
+R_R2         N00155 N00273  5.6k TC=0,0 
+R_R3         N00390 N00273  330 TC=0,0 
+V_V2         N00273 0 12Vdc
+C_C2         N00390 N00422  1u  TC=0,0 
+R_R4         0 N00422  220 TC=0,0 
+Q_Q1         N00390 N00155 N00672 BC548B 
+R_R5         0 N00672  100 TC=0,0 
+C_C3         0 N00672  100u  TC=0,0 
+
+**** RESUMING Lab4-2.cir ****
+.END
+

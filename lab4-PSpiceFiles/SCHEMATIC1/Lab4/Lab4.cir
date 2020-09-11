@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-Lab4"  [ C:\OrCAD\OrCAD_16.6_Lite\tools\capture\Lab4-PSpiceFiles\SCHEMATIC1\Lab4.sim ] 
+
+** Creating circuit file "Lab4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "Z:/OLB_Pspice/ebipolar.lib" 
+* From [PSPICE NETLIST] section of Z:\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.00001 0 0.01u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

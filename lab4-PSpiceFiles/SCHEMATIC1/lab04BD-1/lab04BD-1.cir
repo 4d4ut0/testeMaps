@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-lab04BD-1"  [ C:\Users\K4tr1n4\Desktop\aqui\lab4-PSpiceFiles\SCHEMATIC1\lab04BD-1.sim ] 
+
+** Creating circuit file "lab04BD-1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../ebipolar.lib" 
+* From [PSPICE NETLIST] section of C:\Users\K4tr1n4\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+
+*Analysis directives: 
+.AC DEC 10 10 1000k
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

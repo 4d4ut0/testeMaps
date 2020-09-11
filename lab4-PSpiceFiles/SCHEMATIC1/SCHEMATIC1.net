@@ -1,0 +1,12 @@
+* source LAB4
+C_C1         VIN N00155  1u  TC=0,0 
+R_R1         0 N00155  1.2k TC=0,0 
+R_R2         N00155 N00273  5.6k TC=0,0 
+R_R3         N00390 N00273  330 TC=0,0 
+V_V2         N00273 0 12Vdc
+C_C2         N00390 N00422  1u  TC=0,0 
+R_R4         0 N00422  220 TC=0,0 
+Q_Q1         N00390 N00155 N00672 BC548B 
+R_R5         0 N00672  100 TC=0,0 
+C_C3         0 N00672  100u  TC=0,0 
+V_V3         VIN 0 DC 0Vdc AC 50mVac 
